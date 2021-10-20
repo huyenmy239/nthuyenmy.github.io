@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:wght@400;500&display=swap');
+/*all style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html    {
+    scroll-behavior: smooth;
+}
+section {
+    padding: 100px 0;
+}
+section .title  {
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 50%;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.max-width  {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, .hobbies, .contact, footer  {
+    font-family: 'Poppins', sans-serif; 
+}
+.about .about-content,
+.hobbies .hobbies-content,
+.contact .contact-content   {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*navbar style*/
+.navbar {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky {
+    padding: 10px 0;
+    background:rgb(59, 174, 212);
+}
+.navbar.sticky .logo a span {
+    color: white;
+}
+.navbar .max-width  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar li  {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li    {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a {
+    color: white; 
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: color 0.2s ease;
+}
+.navbar .menu li a:hover {
+    color:rgb(59, 174, 212);
+}
+.navbar .logo a  {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+}
+.navbar .logo a span {
+    color:rgb(59, 174, 212);
+    transition: all 0.3s ease;
+}
+
+
+/*home section style*/
+.home   {
+    display: flex;
+    background: url("https://cutewallpaper.org/21/software-developer-wallpaper/Abstract-programming-code-background.-Software-development-concept..png") no-repeat center;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width    {
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text1 {
+    font-size: 30px;
+}
+.home .home-content .text2 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text3 {
+    font-size: 30px;
+    margin: 5px 0;
+}
+.home .home-content .text3 span {
+    color:rgb(59, 174, 212);
+    font-weight: 500;
+}
+
+
+/*about section style*/
+.about .about-content .left {
+    width: 45%;
+}
+.about .about-content .left img   {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.about .about-content .right {
+    width: 55%;
+}
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span {
+    color:rgb(59, 174, 212);
+}
+.about .about-content .right .text p    {
+    text-align: justify;
+}
+.max-width  {
+    margin: auto 0 auto 40px;
+}
+
+
+/*hobbies section style*/
+.hobbies .hobbies-content .column   {
+    width: calc(50% - 30px)
+}
+.hobbies .hobbies-content .left .text   {
+    font-size: 20px;
+    font-weight:600;
+    margin-bottom: 10px;
+}
+.hobbies .hobbies-content .right .bars  {
+    margin-bottom: 15px;
+}
+.hobbies .hobbies-content .right .info  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hobbies .hobbies-content .right span   {
+    font-weight: 500;
+    font-weight: 18px;
+}
+.hobbies .hobbies-content .right .line  {
+    height: 5px;
+    width: 100%;
+    background: rgb(179, 179, 179);
+    border-radius: 10px;
+    position: relative;
+}
+.hobbies .hobbies-content .right .line::before  {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background:rgb(59, 174, 212);
+}
+.hobbies .hobbies-content .right .reading::before  {
+    width: 83%;
+}
+.hobbies .hobbies-content .right .singing::before  {
+    width: 99%;
+}
+.hobbies .hobbies-content .right .traveling::before  {
+    width: 78%;
+}
+
+
+/*contact section style*/
+.contact .contact-content .column   {
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p {
+    text-align: justify;
+}
+.contact .contact-content .left .icons   {
+    margin: 10px 0;
+}
+.contact .contact-content .row  {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info    {
+    margin-left: 30px;
+}
+.contact .contact-content .row i   {
+    font-size: 25px;
+    color:rgb(59, 174, 212);
+}
+
+
+/*footer section style*/
+footer  {
+    background:black;
+    padding: 10px 23px;
+    color: white;
+}
+footer span a   {
+    color:rgb(59, 174, 212);
+    text-decoration: none;
+}
