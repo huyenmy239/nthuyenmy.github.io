@@ -9,7 +9,7 @@ $(document).ready(function(){
 });
 
 var typed = new Typed(".typing1", {
-    strings: ["Youtuber", "Developer", "Designer", "Freelancer"],
+    strings: ["Nguyen Phuong Du", "Nguyen Dang Duc An"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
